@@ -6,5 +6,5 @@ WORKDIR /usr/local/bin/service/
 RUN DOCKER_ENV=1 yarn install --frozen-lockfile --production
 COPY dist /usr/local/bin/service/dist/
 EXPOSE 3000
-WORKDIR /usr/local/bin/service/dist
+WORKDIR /usr/local/bin/service/distnpm i exp
 CMD [ "node", "index.js" ]
